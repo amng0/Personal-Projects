@@ -1,0 +1,62 @@
+public class Book {
+
+    //Instance Variables of a book
+    private String title;
+    private String author;
+    private int pageCount;
+    private String genre;
+
+
+    //Create constructor that takes in input to assign to instance variables
+    public Book (String title, String author, int pageCount, String genre){
+        this.setTitle(title);
+        this.setAuthor(author);
+        this.setPageCount(pageCount);
+        this.setGenre(genre);
+
+
+    }
+
+    //Create getter method so we can return the values of the instance variables
+    public String getTitle(){
+        return title;
+    }
+    public String getAuthor() {
+        return author;
+    }
+
+    public int getPageCount() {
+        return pageCount;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+
+    //Create setter methods to change the state of the object and assign it to the instance variable
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setPageCount(int pageCount) {
+        this.pageCount = pageCount;
+    }
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+
+
+    //Create toString method to print the details of the book
+    //  public String toString(){
+    //    String final bookDetails = "Book: " + title + "," + author + "-" + pageCount;
+    //  return /final bookDetails;
+    // }
+
+
+}
